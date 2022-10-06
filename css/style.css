@@ -157,6 +157,9 @@ aside {
 .carousel {
   grid-area: carousel;
 }
+.atencion {
+  grid-area: atencion;
+}
 footer {
   grid-area: footer;
 }
@@ -190,6 +193,7 @@ aside {
     "article"
     "aside"
     "galeria"
+    "atencion"
     "footer";
 }
 .galeria {
@@ -217,6 +221,7 @@ aside {
       "accordion accordion"
       "article aside"
       "galeria galeria"
+      "atencion atencion"
       "footer footer";
   }
 }
@@ -259,6 +264,7 @@ footer {
       "galeria galeria galeria"
       "fondo fondo fondo"
       "accordion accordion accordion"
+      "atencion atencion atencion"
       "footer footer footer";
   }
 }
