@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*-----------index------------*/
+.camlab {
+  background-image: url("../img/img8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+}
+body {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+}
+.contraste {
+  color: white;
+  text-shadow: rgb(9, 6, 49);
+}
+h1 {
+  margin-left: 2em;
+  color: #fff;
+  line-height: 200px;
+  text-align: left;
+  vertical-align: middle;
+  text-shadow: rgb(31, 52, 71) 0px 0px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+}
+li {
+  display: inline-block;
+}
+li:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 40px 0 40px 60px;
+  color: rgb(15, 72, 105);
+  font-weight: bolder;
+  padding: 1em;
+}
+nav {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: rgba(128, 128, 128, 0.438);
+}
+
+article {
+  color: rgb(90, 168, 168);
+  font-size: 1.5em;
+  padding: 2em;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: gray;
+}
+
+aside {
+  font-size: 1em;
+  font-style: italic;
+  padding: 2em;
+  background-color: rgba(128, 128, 128, 0.411);
+}
+
+/*------------index-----------*/
+/*------------sucursales------*/
+.fondo {
+  background-color: rgba(43, 42, 42, 0.212);
+  padding-bottom: 3em;
+  display: inline-block;
+}
+.titulo {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+  text-shadow: rgb(18, 28, 37) 0px 0px 30px;
+}
+.mapsLab {
+  margin: 2em;
+  width: 700px;
+  height: 400px;
+  border: 4px outset rgba(128, 128, 128, 0.521);
+}
+.direccion {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*----------sucursales---------*/
+/*---------preguntas------------*/
+.titulo2 {
+  padding: 0 2em;
+  font-size: 1em;
+}
+h2 {
+  padding: 2em;
+  font-size: 0.7;
+}
+h2:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+p {
+  font-size: 0.5;
+  line-height: 3.5em;
+  margin: 0 3em;
+  font-style: italic;
+}
+/*----------preguntas----------*/
+/*----------contacto------------*/
+.letra {
+  font-size: 1em;
+  font-weight: bold;
+}
+/*----------contacto------------*/
+/*...........footer----------*/
+footer {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+/*--------------footer--------*/
+
+/*declaro áreas*/
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+article {
+  grid-area: article;
+}
+aside {
+  grid-area: aside;
+}
+.galeria {
+  grid-area: galeria;
+}
+.accordion {
+  grid-area: accordion;
+}
+.fondo {
+  grid-area: fondo;
+}
+.carousel {
+  grid-area: carousel;
+}
+.atencion {
+  grid-area: atencion;
+}
+footer {
+  grid-area: footer;
+}
+.imganimada {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.imganimada:hover {
+  filter: saturate(180%);
+}
+article,
+aside {
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.507);
+}
+
+/*acomodo áreas*/
+
+.envoltura {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "carousel"
+    "accordion"
+    "fondo"
+    "article"
+    "aside"
+    "galeria"
+    "atencion"
+    "footer";
+}
+.galeria {
+  background-color: rgba(128, 128, 128, 0.397);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+
+.imgLab {
+  width: 600px;
+  height: 350px;
+  border: 6px solid #4e426d75;
+  margin-top: 15px;
+}
+
+@media (min-width: 500px) {
+  .envoltura {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "fondo fondo"
+      "carousel carousel"
+      "accordion accordion"
+      "article aside"
+      "galeria galeria"
+      "atencion atencion"
+      "footer footer";
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.planta {
+  width: 100%;
+}
+.imgLab {
+  width: 700px;
+  height: 450px;
+}
+.osociales {
+  width: 100%;
+}
+article,
+aside {
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.507);
+}
+footer {
+  background-color: rgba(128, 128, 128, 0.137);
+}
+
+@media (min-width: 768px) {
+  .envoltura {
+    background: rgb(6, 38, 51);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 38, 51, 0.9780287114845938) 0%,
+      rgba(24, 83, 115, 0.9444152661064426) 23%,
+      rgba(6, 156, 177, 0.711922268907563) 66%,
+      rgba(16, 137, 157, 0.40940126050420167) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 1.5em;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "carousel carousel carousel"
+      "article aside aside"
+      "galeria galeria galeria"
+      "fondo fondo fondo"
+      "accordion accordion accordion"
+      "atencion atencion atencion"
+      "footer footer footer";
+  }
+}
+.imgLab {
+  border: 8px solid rgba(0, 0, 0, 0.034);
+}
+a,
+h1 {
+  color: black;
+  text-shadow: rgb(250, 252, 255) 0px 0px 30px;
+}
+.accordion-item {
+  background-color: rgba(24, 90, 90, 0.233);
+}
+@media (min-width: 1024px) {
+  .envoltura {
+    background: rgb(6, 38, 51);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 38, 51, 0.9780287114845938) 0%,
+      rgba(24, 83, 115, 0.9444152661064426) 23%,
+      rgba(6, 156, 177, 0.711922268907563) 66%,
+      rgba(16, 137, 157, 0.40940126050420167) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+}
+.imgLab {
+  border: 15px solid rgba(0, 0, 0, 0.034);
+}
+
+nav {
+  padding: 20px;
+}
+h1,
+p {
+  margin: 0.5em;
+  color: black;
+  text-align: center;
+}
+.letra {
+  font-size: 1em;
+  width: 20px;
+}
+.accordion-item {
+  background-color: rgba(255, 255, 255, 0.637);
+}
+.accordion-button {
+  background-color: rgba(11, 69, 73, 0.205);
+  padding: 2em;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: rgba(14, 96, 102, 0.205);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
