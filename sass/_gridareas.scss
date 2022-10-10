@@ -1,0 +1,40 @@
+/*declaro áreas*/
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+article {
+  grid-area: article;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.galeria {
+  grid-area: galeria;
+}
+
+.accordion {
+  grid-area: accordion;
+}
+
+.fondo {
+  grid-area: fondo;
+}
+
+.carousel {
+  grid-area: carousel;
+}
+
+.atencion {
+  grid-area: atencion;
+}
+
+footer {
+  grid-area: footer;
+}

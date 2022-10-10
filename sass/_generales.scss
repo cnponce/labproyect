@@ -1,0 +1,111 @@
+nav {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: rgba(128, 128, 128, 0.438);
+  @media (min-width: 1024px) {
+    padding: 20px;
+  }
+  ul {
+    @media (min-width: 500px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    li {
+      display: inline-block;
+      &:hover {
+        transform: scale(1.5);
+        transition: all 0.5s;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.3em;
+        padding: 40px 0 40px 60px;
+        color: rgb(15, 72, 105);
+        font-weight: bolder;
+
+        &:hover {
+          color: $b;
+        }
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: $b;
+  @media (min-width: 768px) {
+    text-shadow: rgb(250, 252, 255) 0px 0px 30px;
+  }
+}
+body {
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 0.5;
+  line-height: 3.5em;
+  margin: 0 3em;
+  font-style: italic;
+  @media (min-width: 1024px) {
+    margin: 0.5em;
+    color: black;
+    text-align: center;
+  }
+}
+h1 {
+  margin-left: 2em;
+  color: rgb(53, 85, 114);
+  line-height: 200px;
+  text-align: left;
+  vertical-align: middle;
+  text-shadow: rgb(31, 52, 71) 0px 0px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-shadow: rgb(250, 252, 255) 0px 0px 30px;
+  }
+  @media (min-width: 1024px) {
+    margin: 0.5em;
+    color: $b;
+  }
+}
+h2 {
+  padding: 2em;
+  font-size: 0.7;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.4s;
+  }
+}
+
+article {
+  @include principal;
+  font-weight: bolder;
+}
+
+aside {
+  @include principal;
+}
+article,
+aside {
+  @media (min-width: 500px) {
+    font-size: 1.4em;
+    color: rgb(188, 214, 231);
+  }
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+
+  @media (min-width: 500px) {
+    background-color: rgba(128, 128, 128, 0.137);
+  }
+}
