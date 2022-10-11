@@ -26,7 +26,6 @@ nav ul li:hover {
 nav ul li a {
   text-decoration: none;
   font-size: 1.3em;
-  padding: 40px 0 40px 60px;
   color: rgb(15, 72, 105);
   font-weight: bolder;
 }
@@ -116,7 +115,7 @@ aside {
 
 @media (min-width: 500px) {
   article,
-aside {
+  aside {
     font-size: 1.4em;
     color: rgb(188, 214, 231);
   }
@@ -250,7 +249,14 @@ footer {
 @media (min-width: 768px) {
   .envoltura {
     background: rgb(6, 38, 51);
-    background: linear-gradient(90deg, rgba(6, 38, 51, 0.9780287115) 0%, rgba(24, 83, 115, 0.9444152661) 23%, rgba(6, 156, 177, 0.7119222689) 66%, rgba(16, 137, 157, 0.4094012605) 100%, rgb(0, 212, 255) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 38, 51, 0.9780287115) 0%,
+      rgba(24, 83, 115, 0.9444152661) 23%,
+      rgba(6, 156, 177, 0.7119222689) 66%,
+      rgba(16, 137, 157, 0.4094012605) 100%,
+      rgb(0, 212, 255) 100%
+    );
     grid-template-columns: 1fr 4fr 1fr;
     margin-bottom: 1.5em;
     grid-template-areas: "header header header" "nav nav nav" "carousel carousel carousel" "article aside aside" "galeria galeria galeria" "fondo fondo fondo" "accordion accordion accordion" "atencion atencion atencion" "footer footer footer";
@@ -259,7 +265,14 @@ footer {
 @media (min-width: 1024px) {
   .envoltura {
     background: rgb(6, 38, 51);
-    background: linear-gradient(90deg, rgba(6, 38, 51, 0.9780287115) 0%, rgba(24, 83, 115, 0.9444152661) 23%, rgba(6, 156, 177, 0.7119222689) 66%, rgba(16, 137, 157, 0.4094012605) 100%, rgb(0, 212, 255) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 38, 51, 0.9780287115) 0%,
+      rgba(24, 83, 115, 0.9444152661) 23%,
+      rgba(6, 156, 177, 0.7119222689) 66%,
+      rgba(16, 137, 157, 0.4094012605) 100%,
+      rgb(0, 212, 255) 100%
+    );
   }
 }
 
@@ -356,4 +369,4 @@ footer {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}/*# sourceMappingURL=estilos.css.map */
+} /*# sourceMappingURL=estilos.css.map */
