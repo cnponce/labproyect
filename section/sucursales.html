@@ -31,34 +31,62 @@
           </a>
         </div>
       </header>
-      <nav>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html"
-              >Inicio</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="empresa.html">Empresa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="areas.html">Áreas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sucursales.html">Sucursales</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="preguntas.html"
-              >Preguntas Frecuentes</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="areas.html">Áreas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="preguntas.html"
+                    >Preguntas Frecuentes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="buscar"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
         <section class="fondo">
-          <h1 data-aos="fade-up" class="titulo">Sucursal Devoto</h1>
+          <h1 class="titulo">Nuestras Sucursales</h1>
+          <h2 data-aos="fade-up">Sucursal Devoto</h2>
           <a
             class="direccion"
             href="https://www.google.com.ar/maps/place/Helguera+2577,+C1417CQG+CABA/@-34.618098,-58.4862282,16z/data=!4m5!3m4!1s0x95bcb62115954ea7:0xc1335faea3ed831d!8m2!3d-34.60519!4d-58.4900543"
@@ -74,7 +102,7 @@
             />
           </figure>
   
-          <h1 data-aos="fade-up" class="titulo">Sucursal Villa del Parque</h1>
+          <h2 data-aos="fade-up">Sucursal Villa del Parque</h2>
           <a
             class="direccion"
             href="https://www.google.com.ar/maps/place/Mercedes+4140,+C1419BGL+CABA/@-34.5995614,-58.5157916,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb7cbef16ec17:0x111974b609d35d52!8m2!3d-34.5995658!4d-58.5135976"
