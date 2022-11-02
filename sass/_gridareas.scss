@@ -1,3 +1,69 @@
+/*acomodo areas*/
+.envoltura {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "carousel"
+    "accordion"
+    "fondo"
+    "article"
+    "aside"
+    "galeria"
+    "atencion"
+    "consulta"
+    "footer";
+  @media (min-width: 500px) {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "fondo fondo"
+      "carousel carousel"
+      "accordion accordion"
+      "article aside"
+      "galeria galeria"
+      "atencion atencion"
+      "consulta consulta"
+      "footer footer";
+  }
+  @media (min-width: 768px) {
+    background: rgb(6, 38, 51);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 38, 51, 0.9780287115) 0%,
+      rgba(24, 83, 115, 0.9444152661) 23%,
+      rgba(6, 156, 177, 0.7119222689) 66%,
+      rgba(16, 137, 157, 0.4094012605) 100%,
+      rgb(0, 212, 255) 100%
+    );
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 1.5em;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "carousel carousel carousel"
+      "article aside aside"
+      "galeria galeria galeria"
+      "fondo fondo fondo"
+      "accordion accordion accordion"
+      "atencion atencion atencion"
+      "consulta consulta consulta"
+      "footer footer footer";
+  }
+  @media (min-width: 1024px) {
+    background: rgb(6, 38, 51);
+    background: linear-gradient(
+      90deg,
+      rgba(6, 38, 51, 0.9780287115) 0%,
+      rgba(24, 83, 115, 0.9444152661) 23%,
+      rgba(6, 156, 177, 0.7119222689) 66%,
+      rgba(16, 137, 157, 0.4094012605) 100%,
+      rgb(0, 212, 255) 100%
+    );
+  }
+}
+
 /*declaro áreas*/
 header {
   grid-area: header;
@@ -33,6 +99,10 @@ aside {
 
 .atencion {
   grid-area: atencion;
+}
+
+.consulta {
+  grid-area: consulta;
 }
 
 footer {

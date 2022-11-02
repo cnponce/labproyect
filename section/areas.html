@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../css/estilos.css" />
     <meta
       name="keywords"
-      content="laboratorio, camlab, analisis, sangre, covid, areas, secrtores"
+      content="laboratorio, camlab, analisis, sangre, covid, areas, sectores"
     />
     <meta
       name="description"
@@ -32,111 +32,229 @@
           </a>
         </div>
       </header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="empresa.html">Empresa</a>
-          </li>
-          <li>
-            <a href="areas.html">Áreas</a>
-          </li>
-          <li>
-            <a href="sucursales.html">Sucursales</a>
-          </li>
-          <li>
-            <a href="preguntas.html">Preguntas frecuentes</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="areas.html">Áreas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="preguntas.html"
+                    >Preguntas Frecuentes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="buscar"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
       <section class="fondo">
-        <h1>Nuestras áreas</h1>
-        <h2 data-aos="fade-up" class="titulo">Infectología Molecular</h2>
+        <h1 class="titulo">Nuestras áreas</h1>
         <p>
-          Dedicados al diagnóstico molecular de infecciones virales,
-          bacterianas, micóticas, parasitarias y a la detección de mutaciones
-          asociadas a resistencia a diferentes antivirales. El área cuenta con
-          equipamiento de última generación como el sistema COBAS 6800, COBAS
-          4800, MagNaPure 96, Secuenciador capilar y de nueva generación que
-          permiten la automatización casi completa de los procesos ofreciendo
-          resultados con una muy alta Sensibilidad y Especificidad, garantizando
-          la reproducibilidad de los resultados con los mejores tiempos de
-          respuesta.
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Infectología Molecular
+          </button>
         </p>
-
-        <h2 data-aos="fade-up" class="titulo">Química Clínica</h2>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+              Dedicados al diagnóstico molecular de infecciones virales,
+              bacterianas, micóticas, parasitarias y a la detección de
+              mutaciones asociadas a resistencia a diferentes antivirales. El
+              área cuenta con equipamiento de última generación como el sistema
+              COBAS 6800, COBAS 4800, MagNaPure 96, Secuenciador capilar y de
+              nueva generación que permiten la automatización casi completa de
+              los procesos ofreciendo resultados con una muy alta Sensibilidad y
+              Especificidad, garantizando la reproducibilidad de los resultados
+              con los mejores tiempos de respuesta.
+            </div>
+          </div>
+        </div>
         <p>
-          Con gran dedicación realizamos estudios de química clínica
-          especializada con los tiempos más eficientes de respuesta para la
-          entrega de resultados. Concentramos el mayor número de hemoglobinas
-          glicosiladas del país, siendo un referente en esta determinación en el
-          ámbito de la salud con más de 3.000 hemoglobinas diarias. El trabajo
-          interdisciplinario con otras áreas y los estrictos controles de
-          calidad externos e internos en los que participamos nos permite
-          aportar valor en las decisiones médicas.
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Química Clínica
+          </button>
         </p>
-
-        <h2 data-aos="fade-up" class="titulo">Hematología y Hemostasia</h2>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+              Con gran dedicación realizamos estudios de química clínica
+              especializada con los tiempos más eficientes de respuesta para la
+              entrega de resultados. Concentramos el mayor número de
+              hemoglobinas glicosiladas del país, siendo un referente en esta
+              determinación en el ámbito de la salud con más de 3.000
+              hemoglobinas diarias. El trabajo interdisciplinario con otras
+              áreas y los estrictos controles de calidad externos e internos en
+              los que participamos nos permite aportar valor en las decisiones
+              médicas.
+            </div>
+          </div>
+        </div>
         <p>
-          Trabajamos en la evaluación de los desórdenes hemorrágicos y/o
-          trombóticos que involucran a los componentes de los sistemas de
-          coagulación y fibrinólisis. Utilizamos equipos BCS-XP con metodologías
-          automatizadas coagulantes, cromogénicas e inmunológicas que permiten
-          realizar una amplia gama de ensayos para satisfacer la demanda de
-          enfermedades hemostáticas con una rápida resolución de las muestras
-          analizadas.
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Hematología y Hemostasia
+          </button>
         </p>
-
-        <h2 data-aos="fade-up" class="titulo">Microbiología</h2>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+              Trabajamos en la evaluación de los desórdenes hemorrágicos y/o
+              trombóticos que involucran a los componentes de los sistemas de
+              coagulación y fibrinólisis. Utilizamos equipos BCS-XP con
+              metodologías automatizadas coagulantes, cromogénicas e
+              inmunológicas que permiten realizar una amplia gama de ensayos
+              para satisfacer la demanda de enfermedades hemostáticas con una
+              rápida resolución de las muestras analizadas.
+            </div>
+          </div>
+        </div>
         <p>
-          Integramos el estudio de todos los microorganismos, hongos, bacterias
-          y parásitos que afectan al ser humano. Con un diseño estratégico de
-          las instalaciones procesamos muestras de alto riesgo biológico,
-          ofreciendo diagnósticos de suma utilidad para la práctica diaria en el
-          ámbito de la salud para microorganismos que son agentes causales de
-          gran número de patologías.
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Microbiología
+          </button>
         </p>
-
-        <h2 data-aos="fade-up" class="titulo">Endocrinología</h2>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+              Integramos el estudio de todos los microorganismos, hongos,
+              bacterias y parásitos que afectan al ser humano. Con un diseño
+              estratégico de las instalaciones procesamos muestras de alto
+              riesgo biológico, ofreciendo diagnósticos de suma utilidad para la
+              práctica diaria en el ámbito de la salud para microorganismos que
+              son agentes causales de gran número de patologías.
+            </div>
+          </div>
+        </div>
         <p>
-          Ponemos toda nuestra pasión y experiencia junto a la tecnología más
-          innovadora con el objetivo de brindar resultados precisos y confiables
-          para la detección y el seguimiento de desequilibrios hormonales,
-          deficiencias nutricionales, oncología, embarazo, alergias, trastornos
-          del estilo de vida, etc. La optimización de los procesos y la vocación
-          de servicio de nuestra gente nos permiten obtener la mejor combinación
-          de operatividad, eficiencia y calidad para resolver más de 32.000
-          determinaciones diarias en el área.
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Endocrinología
+          </button>
         </p>
-
-        <h2 data-aos="fade-up" class="titulo">Toxicología</h2>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+              Ponemos toda nuestra pasión y experiencia junto a la tecnología
+              más innovadora con el objetivo de brindar resultados precisos y
+              confiables para la detección y el seguimiento de desequilibrios
+              hormonales, deficiencias nutricionales, oncología, embarazo,
+              alergias, trastornos del estilo de vida, etc. La optimización de
+              los procesos y la vocación de servicio de nuestra gente nos
+              permiten obtener la mejor combinación de operatividad, eficiencia
+              y calidad para resolver más de 32.000 determinaciones diarias en
+              el área.
+            </div>
+          </div>
+        </div>
         <p>
-          Con una gran cantidad de equipamiento especializado en los que se
-          incluyen dos equipos de absorción atómica, dos equipos de
-          cromatografía gaseosa y seis equipos de HPLC damos soporte a un gran
-          número de pacientes. En el área se identifican las sustancias tóxicas
-          en diferentes materiales biológicos únicamente en humanos, aportando
-          valor al diagnóstico de intoxicaciones, exposición prolongada a
-          diferentes agentes nocivos para la salud del paciente. Así mismo
-          realizamos el dosaje y el monitoreo de drogas con el fin de maximizar
-          la eficacia de los tratamientos.
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseWidthExample"
+            aria-expanded="false"
+            aria-controls="collapseWidthExample"
+          >
+            Toxicología
+          </button>
         </p>
+        <div style="min-height: 120px">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body">
+              Con una gran cantidad de equipamiento especializado en los que se
+              incluyen dos equipos de absorción atómica, dos equipos de
+              cromatografía gaseosa y seis equipos de HPLC damos soporte a un
+              gran número de pacientes. En el área se identifican las sustancias
+              tóxicas en diferentes materiales biológicos únicamente en humanos,
+              aportando valor al diagnóstico de intoxicaciones, exposición
+              prolongada a diferentes agentes nocivos para la salud del
+              paciente. Así mismo realizamos el dosaje y el monitoreo de drogas
+              con el fin de maximizar la eficacia de los tratamientos.
+            </div>
+          </div>
+        </div>
       </section>
       <footer>
-        <div>
-          <a href="areas.html">
-            <img
-              data-aos="zoom-in"
-              class="imganimada"
-              src="../img/img9.jpg"
-              alt="dibujo del virus del covid"
-            />
-          </a>
+        <div class="pie-pagina">
+          <h4>Cam Lab</h4>
+        </div>
+        <div class="contacto-container">
+          <h3>Conctacto</h3>
+          <p class="contacto-resumen">Mercedes 4140, Villa Devoto</p>
+          <p class="contacto-resumen">Helguera 2577, Villa del Parque</p>
+          <p class="contacto-resumen">11-6354-8896</p>
+          <p class="contacto-resumen">Lunes a Viernes de 7.30 a 19 hs.</p>
         </div>
         <div>
           <a href="https://www.facebook.com/" target="_blank"

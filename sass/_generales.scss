@@ -1,7 +1,6 @@
 nav {
-  margin: 1em;
   padding: 0.5em;
-  background-color: rgba(128, 128, 128, 0.438);
+  background-color: rgb(128, 128, 128);
   @media (min-width: 1024px) {
     padding: 20px;
   }
@@ -74,14 +73,25 @@ h1 {
   }
 }
 h2 {
-  padding: 2em;
+  padding: 1.5em;
   font-size: 0.7;
   &:hover {
     transform: scale(1.1);
     transition: all 0.4s;
   }
 }
-
+h3 {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+h4 {
+  color: white;
+  margin-top: 57px;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: monospace;
+  font-family: ubuntu;
+}
 article {
   @include principal;
   font-weight: bolder;
@@ -97,12 +107,28 @@ aside {
     color: rgb(188, 214, 231);
   }
 }
-
+button[type="submit"] {
+  padding: 13px 43px;
+  background-color: rgb(2, 2, 2);
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: none;
+  box-shadow: 3px 3px 0px 0px #5a5a5a;
+  &:hover {
+    background-color: rgb(142, 222, 253);
+    color: black;
+    box-shadow: none;
+  }
+}
 footer {
-  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
   margin: 0 auto;
   margin-top: 1.5em;
+  margin-bottom: 120px;
+  padding: 1.25em;
 
   @media (min-width: 500px) {
     background-color: rgba(128, 128, 128, 0.137);

@@ -31,27 +31,58 @@
           </a>
         </div>
       </header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="empresa.html">Empresa</a>
-          </li>
-          <li>
-            <a href="areas.html">Áreas</a>
-          </li>
-          <li>
-            <a href="sucursales.html">Sucursales</a>
-          </li>
-          <li>
-            <a href="preguntas.html">Preguntas frecuentes</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="areas.html">Áreas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="preguntas.html"
+                    >Preguntas Frecuentes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="buscar"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
       <section class="fondo">
         <h1 data-aos="fade-up" class="titulo">Nuestra Trayectoria</h1>
@@ -72,15 +103,15 @@
       </section>
 
       <footer>
-        <div>
-          <a href="./empresa.html">
-            <img
-              data-aos="zoom-in"
-              class="imganimada"
-              src="../img/img9.jpg"
-              alt="dibujo del virus del covid"
-            />
-          </a>
+        <div class="pie-pagina">
+          <h4>Cam Lab</h4>
+        </div>
+        <div class="contacto-container">
+          <h3>Conctacto</h3>
+          <p class="contacto-resumen">Mercedes 4140, Villa Devoto</p>
+          <p class="contacto-resumen">Helguera 2577, Villa del Parque</p>
+          <p class="contacto-resumen">11-6354-8896</p>
+          <p class="contacto-resumen">Lunes a Viernes de 7.30 a 19 hs.</p>
         </div>
         <div>
           <a href="https://www.facebook.com/" target="_blank"

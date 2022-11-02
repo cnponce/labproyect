@@ -20,7 +20,6 @@
       name="description"
       content="Prestación Asistencial a Pacientes, Bioquímicos, Sanatorios y Centros de Diagnóstico."
     />
-
     <title>CamLab</title>
   </head>
   <body>
@@ -32,29 +31,64 @@
           </a>
         </div>
       </header>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="./section/empresa.html">Empresa</a>
-          </li>
-          <li>
-            <a href="./section/areas.html">Áreas</a>
-          </li>
-          <li>
-            <a href="./section/sucursales.html">Sucursales</a>
-          </li>
-          <li>
-            <a href="./section/preguntas.html">Preguntas frecuentes</a>
-          </li>
-          <li>
-            <a href="./section/contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">INICIO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="./section/empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./section/areas.html">Áreas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./section/sucursales.html"
+                    >Sucursales</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./section/preguntas.html"
+                    >Preguntas Frecuentes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./section/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="buscar"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </nav>
+
       <article>Conocé nuestra planta</article>
       <aside>Con el mejor equipamiento y personal capacitado</aside>
 
@@ -84,17 +118,17 @@
       </section>
 
       <footer>
-        <div>
-          <a href="index.html">
-            <img
-              data-aos="zoom-in"
-              class="imganimada"
-              src="./img/img9.jpg"
-              alt="dibujo del virus del covid"
-            />
-          </a>
+        <div class="pie-pagina">
+          <h4>Cam Lab</h4>
         </div>
-        <div>
+        <div class="contacto-container">
+          <h3>Conctacto</h3>
+          <p class="contacto-resumen">Mercedes 4140, Villa Devoto</p>
+          <p class="contacto-resumen">Helguera 2577, Villa del Parque</p>
+          <p class="contacto-resumen">11-6354-8896</p>
+          <p class="contacto-resumen">Lunes a Viernes de 7.30 a 19 hs.</p>
+        </div>
+        <div class="redes">
           <a href="https://www.facebook.com/" target="_blank"
             ><img
               src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png"
@@ -116,6 +150,33 @@
               src="https://img.icons8.com/ios-glyphs/30/000000/youtube--v1.png"
               alt="icono youtube en color negro"
           /></a>
+          <a href=""></a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="100px"
+            height="100px"
+          >
+            <linearGradient
+              id="Ld6sqrtcxMyckEl6xeDdMa"
+              x1="9.993"
+              x2="40.615"
+              y1="9.993"
+              y2="40.615"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#2aa4f4" />
+              <stop offset="1" stop-color="#007ad9" />
+            </linearGradient>
+            <path
+              fill="url(#Ld6sqrtcxMyckEl6xeDdMa)"
+              d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"
+            />
+            <path
+              fill="#fff"
+              d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"
+            />
+          </svg>
         </div>
       </footer>
     </div>
