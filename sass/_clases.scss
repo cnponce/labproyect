@@ -74,19 +74,9 @@
 .letra {
   font-size: 1em;
   font-weight: bold;
+  font-family: ubuntu;
 }
 /*----------contacto------------*/
-
-.imganimada {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid black;
-}
-
-.imganimada:hover {
-  filter: saturate(180%);
-}
 
 .galeria {
   background-color: rgba(128, 128, 128, 0.397);
@@ -99,68 +89,7 @@
 .accordion-item {
   background-color: rgba(24, 90, 90, 0.233);
 }
-/*acomodo areas*/
-.envoltura {
-  display: grid;
-  gap: 20px;
-  grid-template-areas:
-    "header"
-    "nav"
-    "carousel"
-    "accordion"
-    "fondo"
-    "article"
-    "aside"
-    "galeria"
-    "atencion"
-    "footer";
-  @media (min-width: 500px) {
-    grid-template-areas:
-      "header header"
-      "nav nav"
-      "fondo fondo"
-      "carousel carousel"
-      "accordion accordion"
-      "article aside"
-      "galeria galeria"
-      "atencion atencion"
-      "footer footer";
-  }
-  @media (min-width: 768px) {
-    background: rgb(6, 38, 51);
-    background: linear-gradient(
-      90deg,
-      rgba(6, 38, 51, 0.9780287115) 0%,
-      rgba(24, 83, 115, 0.9444152661) 23%,
-      rgba(6, 156, 177, 0.7119222689) 66%,
-      rgba(16, 137, 157, 0.4094012605) 100%,
-      rgb(0, 212, 255) 100%
-    );
-    grid-template-columns: 1fr 4fr 1fr;
-    margin-bottom: 1.5em;
-    grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "carousel carousel carousel"
-      "article aside aside"
-      "galeria galeria galeria"
-      "fondo fondo fondo"
-      "accordion accordion accordion"
-      "atencion atencion atencion"
-      "footer footer footer";
-  }
-  @media (min-width: 1024px) {
-    background: rgb(6, 38, 51);
-    background: linear-gradient(
-      90deg,
-      rgba(6, 38, 51, 0.9780287115) 0%,
-      rgba(24, 83, 115, 0.9444152661) 23%,
-      rgba(6, 156, 177, 0.7119222689) 66%,
-      rgba(16, 137, 157, 0.4094012605) 100%,
-      rgb(0, 212, 255) 100%
-    );
-  }
-}
+
 .planta {
   @media (min-width: 500px) {
     width: 100%;
@@ -175,6 +104,10 @@
 .letra {
   font-size: 1em;
   width: 20px;
+}
+.letra2 {
+  font-family: ubuntu;
+  font-size: 1.3em;
 }
 
 .accordion-button {
@@ -195,6 +128,12 @@
   gap: 1rem;
   margin-bottom: 1.25rem;
   width: 25%;
+  margin-inline: auto;
+  label {
+    font-size: 1.15em;
+    font-family: ubuntu;
+    color: $b;
+  }
 }
 .consulta {
   margin-top: 8rem;
@@ -239,4 +178,31 @@ div.collapse-horizontal > div.card-body {
   display: inline-block;
   border-radius: 25px;
   margin: 50px;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 15px;
+  align-items: center;
+}
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 80px;
+}
+
+.contacto-resumen {
+  color: white;
+  font-family: ubuntu;
+  margin: 0;
+  line-height: normal;
+}
+.decoration {
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+.offcanvas {
+  background-color: #adb5bd;
 }
